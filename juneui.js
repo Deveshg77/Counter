@@ -8,7 +8,7 @@
 
     let count = 0;
 
-    // Function to update count display
+
     function updateCount() {
       countDisplay.textContent = count;
       if (count === 0) {
@@ -18,13 +18,12 @@
       }
     }
 
-    // Increment button click handler
     incrementBtn.addEventListener('click', function() {
       count++;
       updateCount();
     });
 
-    // Decrement button click handler
+
     decrementBtn.addEventListener('click', function() {
       if (count > 0) {
         count--;
@@ -35,14 +34,12 @@
       }
     });
 
-    // Clear button click handler
     clearBtn.addEventListener('click', function() {
       count = 0;
       updateCount();
       errorMessage.style.display = 'none'; // Hide error message on clear
     });
 
-    // Initial update of count display
     updateCount();
   });
 
