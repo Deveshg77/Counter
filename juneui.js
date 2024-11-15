@@ -8,7 +8,7 @@
 
     let count = 0;
 
-    // Function to update count display
+    
     function updateCount() {
       countDisplay.textContent = count;
       if (count === 0) {
@@ -18,31 +18,31 @@
       }
     }
 
-    // Increment button click handler
+    
     incrementBtn.addEventListener('click', function() {
       count++;
       updateCount();
     });
 
-    // Decrement button click handler
+  
     decrementBtn.addEventListener('click', function() {
       if (count > 0) {
         count--;
         updateCount();
-        errorMessage.style.display = 'none'; // Hide error message on successful decrement
+        errorMessage.style.display = 'none'; 
       } else {
-        errorMessage.style.display = 'block'; // Show error message when count is 0
+        errorMessage.style.display = 'block'; 
       }
     });
 
-    // Clear button click handler
+    
     clearBtn.addEventListener('click', function() {
       count = 0;
       updateCount();
-      errorMessage.style.display = 'none'; // Hide error message on clear
+      errorMessage.style.display = 'none'; 
     });
 
-    // Initial update of count display
+    
     updateCount();
   });
 
